@@ -3,8 +3,10 @@ import { HfInference } from "@huggingface/inference";
 
 
 const octokit = new Octokit({
-    auth: GITHUB_API_TOKEN,
+    auth: process.env.GITHUB_API_TOKEN,
 });
+
+const hf = new HfInference()
 
 let projectsCache: any[] = [];
 
