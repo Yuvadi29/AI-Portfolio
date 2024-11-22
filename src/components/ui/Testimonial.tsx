@@ -62,6 +62,8 @@ const ReviewCard = ({
                     className="h-16 w-16 rounded-full object-cover"
                     alt={`${name}'s avatar`}
                     src={img}
+                    width={200}
+                    height={200}
                 />
                 <div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">
