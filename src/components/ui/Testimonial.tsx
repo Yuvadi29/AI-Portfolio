@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const reviews = [
     {
@@ -57,7 +58,7 @@ const ReviewCard = ({
             )}
         >
             <div className="flex items-center gap-4">
-                <img
+                <Image
                     className="h-16 w-16 rounded-full object-cover"
                     alt={`${name}'s avatar`}
                     src={img}

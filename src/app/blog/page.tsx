@@ -37,7 +37,7 @@ const Blog = () => {
 
     useEffect(() => {
         fetchPosts();
-    }, []);
+    });
 
     const fetchPosts = async () => {
         const response = await fetch("https://gql.hashnode.com", {
