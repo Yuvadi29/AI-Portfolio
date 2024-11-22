@@ -62,7 +62,7 @@ const ReviewCard = ({
 export function Card() {
     return (
         <div className="container mx-auto py-16">
-            <div className="grid gap-8 border border-yellow-500 ">
+            <div className="grid gap-8 ">
                 {reviews.map((review) => (
                     <ReviewCard
                         key={review.username}
