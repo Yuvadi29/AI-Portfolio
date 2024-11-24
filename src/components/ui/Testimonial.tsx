@@ -36,7 +36,7 @@ const ReviewCard = ({
     return (
         <div
             className={cn(
-                "bg-white rounded-2xl shadow-md p-6 w-full transition-transform hover:scale-105 dark:bg-gray-800 dark:border dark:border-gray-700 h-fit"
+                "bg-white rounded-2xl shadow-md p-6 w-full transition-transform hover:scale-105 dark:bg-gray-800 dark:border dark:border-gray-700 h-fit break-inside-avoid"
             )}
         >
             <div className="flex items-center gap-4 ">
@@ -62,7 +62,7 @@ const ReviewCard = ({
 export function Card() {
     return (
         <div className="container mx-auto py-16">
-            <div className="grid gap-8 ">
+            <div className="md:columns-2 md:space-y-3 space-y-2">
                 {reviews.map((review) => (
                     <ReviewCard
                         key={review.username}
