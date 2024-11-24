@@ -33,15 +33,15 @@ export default function Page() {
   async function getVideos() {
     try {
       const response = await fetch(
-        'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLI7xwGSSw_fIRv8Q4nz77IqgqhRxTBbBW&key=AIzaSyBegmeFS1N61KhkWrkG_UwzmcJePtwuXuQ'
+        `${process.env.NEXT_PUBLIC_YOUTUBE_API_URL}?part=snippet&playlistId=PLI7xwGSSw_fIRv8Q4nz77IqgqhRxTBbBW&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}&maxResults=6`
       );
       const data = await response.json();
       const videoData = data?.items.map((item: any) => ({
-        id: item.snippet.resourceId.videoId,
-        title: item.snippet.title,
-        publishedAt: item.snippet.publishedAt,
-        thumbnail: item.snippet.thumbnails.maxres.url
-      }));
+        id: item?.snippet?.resourceId?.videoId,
+        title: item?.snippet?.title,
+        publishedAt: item?.snippet?.publishedAt,
+        thumbnail: item?.snippet?.thumbnails?.maxres?.url
+      })).slice(1);
       setVideos(videoData || []);
       console.log('hey', videoData);
     } catch (error) {
