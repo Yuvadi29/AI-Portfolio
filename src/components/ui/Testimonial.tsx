@@ -20,6 +20,18 @@ const reviews = [
         body: "thank u, Coding adda and Aditya sir for being an incredible source of learning and inspiration. your episodes have taught me essential coding skills and fostered creativity and problem-solving. beyond technical knowledge ur insights on personal growth and resilience have profoundly shaped my perspective. grateful for the positive impact you've had on my journey!",
         img: "https://media.licdn.com/dms/image/v2/D4E03AQHIbYqEblN0Kw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722779637036?e=1737590400&v=beta&t=dW2fOdOQ6IxldtkbFCke89iIyykKeQklDGs8k-tC4yU",
     },
+    {
+        name: "Kshitija Katare",
+        username: "@kshitija-katare",
+        body: "I have already written on your recommendations on linkedi: here's similar : Aditya is a talented and humble individual with a passion for learning and teaching. As a computer science enthusiast, he keeps his knowledge fresh and shares it with ease. Whether teaching MERN classes, hosting the Coding Adda podcast, or mentoring students, his communication skills and dedication stand out. I had the pleasure of being interviewed by him on his podcast, and his ability to lead engaging conversations was impressive. Aditya’s love for education and technology shines in everything he does. Highly recommend him!",
+        img: "https://media.licdn.com/dms/image/v2/D4D03AQHuBBfotreYAw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705068869026?e=1738195200&v=beta&t=bpHO1qRnLMkA-qCBd5DSjeTJvBuboi7F8VpXzxUPBiE",
+    },
+    {
+        name: "Anish Dalvi",
+        username: "@anishdalvi",
+        body: "Aditya is a highly determined individual who knows exactly what he wants to achieve. He always manages everything efficiently and strives to create and maintain things at their best. I had the privilege of participating in a group podcast with him, where we had an engaging and informative discussion, sharing our experiences. In addition to podcasts, Aditya consistently creates up-to-date and insightful technical content for developers, complemented by eye-catching thumbnails. I've witnessed his journey from 0 subscribers to where he is now, and it’s truly inspiring.I wish him continued success, growth, and brightness along with his YouTube channel. May you reach many more milestones and keep sharing your valuable knowledge. Thanks, Aditya!",
+        img: "https://media.licdn.com/dms/image/v2/C5603AQERGKKfgZjVsg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1648158009715?e=1738195200&v=beta&t=OqQJ8GrvB_vp1BzZPRbAOqrlwCo3l3Cm_An0efXdrGc",
+    },
 ];
 
 const ReviewCard = ({
