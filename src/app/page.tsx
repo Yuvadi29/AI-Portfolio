@@ -27,14 +27,18 @@ interface Video {
   thumbnail: string;
 }
 
+
 export default function Page() {
   const [videos, setVideos] = useState<Video[]>([]);
 
   async function getVideos() {
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_YOUTUBE_API_URL}?part=snippet&playlistId=PLI7xwGSSw_fIRv8Q4nz77IqgqhRxTBbBW&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}&maxResults=6`
-      );
+      const response = await fetch(`${process.env.NEXT_PUBLIC_YOUTUBE_API_URL}?part=snippet&playlistId=PLI7xwGSSw_fIRv8Q4nz77IqgqhRxTBbBW&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}&maxResults=6`);
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('API Error:', errorData);
+        return;
+      }
       const data = await response.json();
       const videoData = data?.items.map((item: any) => ({
         id: item?.snippet?.resourceId?.videoId,

@@ -9,7 +9,7 @@ export const DATA = {
   location: "Bengaluru, India",
   locationLink: "https://www.google.com/maps/place/bengaluru",
   description:
-    "Software Engineer + Content Creator. I love creating content, building things and helping people. Open to talk anywhere 😁.",
+    "Software Engineer + Content Creator. I love creating content, building things and helping people. Open to talk anywhere 😁. Want to know more, try running 'npx hey-aditya` on your Terminal.",
   summary:
     "Hey there! If you are someone who likes to talk around Tech, I am the one you can talk to anytime. At the moment I am building [Coding Adda](https://www.youtube.com/@Coding_Adda) which started back in 2021. In the past, [I pursued a bachelor's degree in information technology](/#education), [interned at MNC's, startups and freelanced various projects.], and [made over 50+ projects for fun](https://github.com/Yuvadi29). Outside work, I find inspiration in dancing, podcasting, nature walks, and travelling.",
   avatarUrl: "/adi.png",

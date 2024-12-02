@@ -48,7 +48,7 @@ const ReviewCard = ({
     return (
         <div
             className={cn(
-                "bg-white rounded-2xl shadow-md p-6 w-full transition-transform hover:scale-105 dark:bg-gray-800 dark:border dark:border-gray-700 h-fit break-inside-avoid"
+                "bg-white rounded-2xl shadow-md p-6 w-full transition-transform hover:scale-105 dark:bg-black dark:border dark:border-gray-900 h-fit break-inside-avoid"
             )}
         >
             <div className="flex items-center gap-4 ">
